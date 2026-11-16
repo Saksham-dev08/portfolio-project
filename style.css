@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+body{
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins' , sans-serif;
+
+}
+
+header{
+    margin-top: 1.25rem;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:0px;
+    font-size: 2rem;
+    color: #A3B65E;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo img{
+    width: 200px;
+    height:60px;
+    object-fit: contain;
+    margin-right: -70px;
+
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav div a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+nav a.Home{
+    color: #A3B65E;
+    border-bottom: 3px solid #A3B65E;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #A3B65E;
+    color: #A3B65E;
+}
+
+.btn.btn-first {
+    background-color: #A3B65E;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+    background-color: black;
+}
+
+.home .main-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #A3B65E;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-top: 20px;
+    
+
+}
+
+section div h6 {
+    font-size: large;
+    color: #A3B65E;
+
+}
+
+section div span{
+    color:#A3B65E;
+    
+    
+}
+
+section .btn-second {
+    color: #A3B65E;
+    background-color: black;
+    border: 2px solid #A3B65E;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s ease;
+    margin-top: 5%;
+}
+
+section .about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.about-section{
+    min-height: 100vh;
+    background-color: #000;
+    padding: 5rem 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about{
+    width: 100%;
+    min-height: 450px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 5%;
+    gap: 4rem;
+
+    clip-path: polygon(
+        0 5%,
+        75% 0,
+        100% 5%,
+        100% 100%,
+        0 100%
+    );
+
+}
+.sec-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-image img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-content {
+    flex: 1.5;
+    color: #333;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.about-content h1 span {
+    color: #A3B65E;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.social a:hover {
+    background-color: #A3B65E;
+    transform: scale(1.1);
+}
+
+.education {
+    border: 2px solid #A3B65E;
+
+}
+.edu h1 {
+
+    text-align: center;
+    color: #A3B65E;
+
+}
+
+.edu p {
+    line-height: 2;
+}
+
+.contact{
+    border: 2px solid #A3B65E;
+}
+
+.contact .con h1{
+    text-align: center;
+    color: #A3B65E;
+
+}
+
+.contact .con p{
+    line-height: 2;
+}
+
+.techstack-section {
+    min-height: auto;
+    padding: 1rem 9% 3rem;
+    background-color: black;
+}
+
+.techstack {
+    border: 2px solid #555;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.techstack h2 {
+    color: #A3B65E;
+    font-family: monospace;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech {
+    border: 1px solid #555;
+    border-radius: 7px;
+    padding: 8px 14px;
+
+    color: #A3B65E;
+    font-family: monospace;
+    font-size: 1.4rem;
+
+    cursor: default;
+    transition: 0.3s ease;
+}
+
+.tech:hover {
+    border-color: #A3B65E;
+    background-color: #A3B65E;
+    color: black;
+    transform: translateY(-2px);
+}
+.techstack-section{
+    margin-top: 0%;
+}
+
+.about-section{
+    min-height: auto;
+    padding: 3rem 9% 1rem;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;
+  text-align: center;       
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: border-box;
+  min-height: auto;
+}
+
+
+.project img{
+    height: 400px;
+    margin-top: 2%;
+    align-self: center;
+}
+
+.header{
+    color: #A3B65E;
+}
+.project p{
+    line-height: 1.5;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 1%;
+}
+
+.project img {
+    transition: 0.5s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.achieve-section{
+    display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;
+  text-align: center;       
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.achieve img{
+    height: 400px;
+    margin-top: 2%;
+    align-self: center;
+}
+
+.achieve img{
+    transition: 0.5s ease;
+}
+
+.achieve img:hover{
+    transform: scale(1.05);
+}
+.achieve p{
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1%;
+}
+
+.achieve .achieve-header{
+    color: #A3B65E;
+}
+
